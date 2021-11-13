@@ -94,6 +94,8 @@ table {
     width: 80%;
     margin: auto;
     align-content: initial;
+    font-family: Facon;
+    font-size: 1.4em;
 }
 
 .menu li a {
@@ -102,6 +104,11 @@ table {
     padding: 20px;
     /*separa ligeramente del borde*/
     display: block;
+}
+
+.menu li a:hover {
+    background-color: aliceblue;
+    color: #000000;
 }
 
 .menu li {
