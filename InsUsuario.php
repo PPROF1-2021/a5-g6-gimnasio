@@ -36,7 +36,7 @@
 
 </head>
 
-<body>
+<body id="estiloBody">
   
     <?php
 	

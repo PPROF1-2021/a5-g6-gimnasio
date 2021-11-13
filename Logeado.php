@@ -31,8 +31,7 @@
 	<link href="img/LogoSF.png" rel="icon" type="image/png"">
 </head>
 
-<body>
-  
+<body id="estiloBody">
     
 	<header class="menu">
 				<nav>
@@ -41,7 +40,7 @@
 		<li><a href="index.html"> Home </a></li>
 		<li><a href="sobre_nosotros.html">Equipo</a></li>
 		<li><a href="contacto.html"> Contacto </a></li>
-   	<li><a href="form_ingreso.php"> Login </a></li>
+   	<li><a href="form_ingreso.html"> Login </a></li>
     <li><a href="help.html"> Ayuda </a></li>
        
 		</ul>
