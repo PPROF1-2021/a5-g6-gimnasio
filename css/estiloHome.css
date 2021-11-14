@@ -190,3 +190,33 @@ div.encabezado {
 div.encabezado h1 {
     color: aliceblue;
 }
+
+#form-validation {
+    text-align: center;
+    background-color: floralwhite;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#form-validation h4 {
+    font-family: Facon;
+}
+
+#form-validation .row {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+div#terminos_condiciones {
+    /*border: 1px black solid;*/
+    margin: 0;
+    padding: 1%;
+    text-align: left;
+}
+
+div#terminos_condiciones label {
+    margin-bottom: 0;
+    text-align: left;
+}
