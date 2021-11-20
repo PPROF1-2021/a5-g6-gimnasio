@@ -69,11 +69,13 @@
 
 
 		<?php
-$mysqli = new mysqli("168.197.48.110","c2110488_PrIspc","98movadoDO","c2110488_PrIspc");
+		  
+include("Conexion/conexion.php");
+/*$mysqli = new mysqli("168.197.48.110","c2110488_PrIspc","98movadoDO","c2110488_PrIspc");
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
+  }*/
   
 $nombre_imagen=$_FILES['imagen']['name'];
 $tipo_iamgen=$_FILES['imagen']['type'];
@@ -124,22 +126,16 @@ else
 			  
 
 		  }
+		  
+include("Conexion/conexion.php");
 	
-$conInser=mysqli_connect("168.197.48.110","c2110488_PrIspc","98movadoDO","c2110488_PrIspc");
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  } 
-  
 $res=mysqli_query($con,"SELECT * FROM `PrUsuario`");
 
-
-		  
 $insertarUsuario = "INSERT INTO `PrUsuario` (`IdUsuario`, `DNI`, `Nombre`, `Apellido`, `Imagen`, `usuario`, `Clave`, `FechaNac`, `Correo`, `Fecha`) VALUES (NULL, '$DNI', '$Nombre', '$Apellido', '$Imagen', '$Usuario', '$Clave', '$FechaNac', '$Correo', CURRENT_TIMESTAMP);";
 
-$ejecutar_insertar=mysqli_query($conInser,$insertarUsuario);
-//mysqli_close($conInser);
+$ejecutar_insertar=mysqli_query($mysqli,$insertarUsuario);
 
+mysqli_close($mysqli);
 $cabeceras = 'From: gymsistem<gymsistem@planidear.com.ar>';
 $enviado = mail($Correo, $Nombre, "REGISTRADO!!",$cabeceras);
 
@@ -150,17 +146,17 @@ else
 
 echo "<script>swal (\"¡iNGRESASTE!\");</script>";
 
-
+include("Conexion/conexion.php");
 	
-$mysqli1 = new mysqli("168.197.48.110","c2110488_PrIspc","98movadoDO","c2110488_PrIspc");
+/*$mysqli1 = new mysqli("168.197.48.110","c2110488_PrIspc","98movadoDO","c2110488_PrIspc");
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
+  }*/
 
 
 $Clave=$_POST['txtClave'];
-$query1 = $mysqli1 -> query ("SELECT * FROM `PrUsuario` WHERE `Clave` LIKE '$Clave'");
+$query1 = $mysqli -> query ("SELECT * FROM `PrUsuario` WHERE `Clave` LIKE '$Clave'");
 
   while ($fila = mysqli_fetch_array($query1))
 
@@ -177,7 +173,7 @@ echo "<h2>"." Apellido: ".$fila['Apellido']."</h2>";
 
 //echo "</TR>\n";
 }
-mysqli_close($mysqli1);
+mysqli_close($mysqli);
 	
 
   ?>  

@@ -73,9 +73,9 @@ include("Conexion/conexion.php");
   
 if(isset($_POST['txtUsuario'])){
 
-    // Variables $_POST[]
-    $u = $_POST['txtUsuario'];
-    $c = MD5($_POST['txtClave']); // La función MD5() estará encriptando lo ingresado para comparar con lo guardado
+// Variables $_POST[]
+$u = $_POST['txtUsuario'];
+$c = MD5($_POST['txtClave']); // La función MD5() estará encriptando lo ingresado para comparar con lo guardado
  
 	
 
@@ -117,26 +117,20 @@ window.location.href = \"http://planidear.com.ar/a5-g6-gimnasio/form_ingreso.htm
 </script>";	
 				
             }else{
-$usuario=$_POST['txtUsuario'];
-//echo"Usuario : $usuario";
 
-	
-$mysqli1 = new mysqli("168.197.48.110","c2110488_PrIspc","98movadoDO","c2110488_PrIspc");
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-
-
+include("Conexion/conexion.php");
+				
 $Clave=$_POST['txtClave'];
-$query1 = $mysqli1 -> query ("SELECT * FROM `PrUsuario` WHERE `Clave` LIKE '$Clave'");
+$usuario=$_POST['txtUsuario'];
+				
+$query1 = $mysqli -> query ("SELECT * FROM `PrUsuario` WHERE `usuario` LIKE '$usuario' AND `Clave` LIKE '$Clave'");
+
 
   while ($fila = mysqli_fetch_array($query1))
-
+				
 {
 
-	 
-//echo "<TR>\n";
+
 echo "<td>".'<img src="'.$fila['Imagen'].'" width="100" heigth="100"/>'."</td>"."<br>";
 echo "<h2>"." Id: ".$fila['IdUsuario']."</h2>";
 echo "<h1>"." Usuario: ".$fila['usuario']."</h1>";
@@ -144,9 +138,9 @@ echo "<h2>"." DNI: ".$fila['DNI']."</h2>";
 echo "<h2>"." Nombre: ".$fila['Nombre']."</h2>";
 echo "<h2>"." Apellido: ".$fila['Apellido']."</h2>";
 
-//echo "</TR>\n";
+
 }
-mysqli_close($mysqli1);
+mysqli_close($mysqli);
 
             }
 
@@ -157,7 +151,7 @@ mysqli_close($mysqli1);
 
   ?>  
 				   
-</table>
+
 
       </div>
   
@@ -168,9 +162,7 @@ mysqli_close($mysqli1);
 		<br>
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
+
 		
 	<footer .estiloFooter>
     <nav class="navbar navbar-light bg-light">

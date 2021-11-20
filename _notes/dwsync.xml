@@ -6,7 +6,7 @@
 <file name="MapaSitio.jpeg" server="ftp.planidear.com.ar" local="132810339400242622" remote="132810356400000000" Dst="0" />
 <file name="plantilla.html" server="ftp.planidear.com.ar" local="132813941683936528" remote="132813942000000000" Dst="0" />
 <file name="sobre_nosotros.html" server="ftp.planidear.com.ar" local="132813941795896598" remote="132813942000000000" Dst="0" />
-<file name="InsUsuario.php" server="ftp.planidear.com.ar" local="132814950544539857" remote="132814950600000000" Dst="0" />
+<file name="InsUsuario.php" server="ftp.planidear.com.ar" local="132819228089851001" remote="132819228600000000" Dst="0" />
 <file name="Consignas IEFI -Web 2021 nov 2021- FINAL.docx" server="ftp.planidear.com.ar" local="132810339400242622" remote="132810355800000000" Dst="0" />
 <file name="EnvCorreo.php" server="ftp.planidear.com.ar" local="132814018160419682" remote="132814018200000000" Dst="0" />
 <file name="contacto.html" server="ftp.planidear.com.ar" local="132814016647859348" remote="132814017000000000" Dst="0" />
@@ -14,9 +14,7 @@
 <file name="GIM_MODELO_RELACIONAL.png" server="ftp.planidear.com.ar" local="132810339400242622" remote="132810356400000000" Dst="0" />
 <file name="GIMDER.png" server="ftp.planidear.com.ar" local="132810339400242622" remote="132810356400000000" Dst="0" />
 <file name="formato-ieee-830 Requerimientos grupo 6 aula 5.docx" server="ftp.planidear.com.ar" local="132810339403523909" remote="132810356400000000" Dst="0" />
-<file name="insertarUsuario.php" server="ftp.planidear.com.ar" local="132813820657986129" remote="132813820800000000" Dst="0" />
-<file name="ListadoUsuarios.php" server="ftp.planidear.com.ar" local="132813761226348971" remote="132813761400000000" Dst="0" />
-<file name="LisUsuarios.php" server="ftp.planidear.com.ar" local="132815528678880224" remote="132819183600000000" Dst="0" />
+<file name="LisUsuarios.php" server="ftp.planidear.com.ar" local="132819220773929242" remote="132819221400000000" Dst="0" />
 <file name="Logeado.php" server="ftp.planidear.com.ar" local="132813941528350208" remote="132813942000000000" Dst="0" />
 <file name="mapa del sitio.png" server="ftp.planidear.com.ar" local="132810339404773865" remote="132810356400000000" Dst="0" />
 <file name="scriptGim.sql" server="ftp.planidear.com.ar" local="132810339404773865" remote="132810356400000000" Dst="0" />
