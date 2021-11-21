@@ -71,11 +71,6 @@
 		<?php
 		  
 include("Conexion/conexion.php");
-/*$mysqli = new mysqli("168.197.48.110","c2110488_PrIspc","98movadoDO","c2110488_PrIspc");
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }*/
   
 $nombre_imagen=$_FILES['imagen']['name'];
 $tipo_iamgen=$_FILES['imagen']['type'];
@@ -147,13 +142,6 @@ else
 echo "<script>swal (\"¡iNGRESASTE!\");</script>";
 
 include("Conexion/conexion.php");
-	
-/*$mysqli1 = new mysqli("168.197.48.110","c2110488_PrIspc","98movadoDO","c2110488_PrIspc");
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }*/
-
 
 $Clave=$_POST['txtClave'];
 $query1 = $mysqli -> query ("SELECT * FROM `PrUsuario` WHERE `Clave` LIKE '$Clave'");
@@ -162,8 +150,6 @@ $query1 = $mysqli -> query ("SELECT * FROM `PrUsuario` WHERE `Clave` LIKE '$Clav
 
 {
 
-	 
-//echo "<TR>\n";
 echo "<td>".'<img src="'.$fila['Imagen'].'" width="100" heigth="100"/>'."</td>"."<br>";
 echo "<h2>"." Id: ".$fila['IdUsuario']."</h2>";
 echo "<h1>"." Usuario: ".$fila['usuario']."</h1>";
@@ -171,7 +157,6 @@ echo "<h2>"." DNI: ".$fila['DNI']."</h2>";
 echo "<h2>"." Nombre: ".$fila['Nombre']."</h2>";
 echo "<h2>"." Apellido: ".$fila['Apellido']."</h2>";
 
-//echo "</TR>\n";
 }
 mysqli_close($mysqli);
 	
