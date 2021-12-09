@@ -29,7 +29,7 @@
 	<!-- Logo Icono -->
     <link href="img/LogoSF.png" rel="icon" type="image/png">
 	
-<title>Usuario</title>
+<title>Usuario - a5-g6-gimnasio</title>
 
 </head>
 
@@ -38,7 +38,7 @@
 	<header class="menu">
 				<nav>
 					<ul>
-        <li class="CssImage"><img class="CssImage" src="img/LogoSF.png" width="70" height="70" alt="Imagen logo"/></li>
+        <li class="CssImage"><a href="index.html"><img class="CssImage" src="img/LogoSF.png" width="70" height="70" alt="Imagen logo"/></a></li>
   		<li><a href="index.html"> Home </a></li>
 		<li><a href="sobre_nosotros.html">Equipo</a></li>
 		<li><a href="contacto.html"> Contacto </a></li>
