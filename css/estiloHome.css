@@ -230,3 +230,10 @@ div#terminos_condiciones label {
 #AlinearLogoInicio{
 text-align: center;
 }
+
+#Idbreadcrumbs1 li {
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+    color:white
+}
