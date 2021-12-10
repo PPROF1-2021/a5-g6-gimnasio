@@ -220,3 +220,17 @@ div#terminos_condiciones label {
 #AlinearLogoInicio{
 text-align: center;
 }
+
+#idbreadcrumbs1 a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    width: 80%; 
+    margin: auto; 
+    align-content: initial; 
+    font-size: 1em;
+   
+    
+}
+
+
