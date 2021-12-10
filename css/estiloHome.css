@@ -217,3 +217,12 @@ div#terminos_condiciones label {
     margin-bottom: 0;
     text-align: left;
 }
+
+.color_texto_menu{
+    color: white
+}
+
+.estilo_navbar{
+    padding: 0mm;
+    margin: 0mm;
+}
