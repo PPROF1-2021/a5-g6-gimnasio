@@ -217,6 +217,27 @@ div#terminos_condiciones label {
     margin-bottom: 0;
     text-align: left;
 }
+
+.color_texto_menu{
+    color: white
+}
+
+.estilo_navbar{
+    padding: 0mm;
+    margin: 0mm;
+}
+
+#AlinearLogoInicio{
+text-align: center;
+}
+
+#Idbreadcrumbs1 li {
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+    color:white
+}
+
 #AlinearLogoInicio{
 text-align: center;
 }
@@ -232,5 +253,3 @@ text-align: center;
    
     
 }
-
-
