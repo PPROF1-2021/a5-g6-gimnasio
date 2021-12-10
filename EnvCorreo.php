@@ -49,6 +49,14 @@
 		</ul>
 	</nav>
 	</header>
+	
+<div id="Idbreadcrumbs1">
+   		<a href="index.html"> Home </a> 
+		<a href="sobre_nosotros.html"> Equipo </a>
+		<a href="contacto.html"> Contacto </a>
+		<a href=""> EnvCorreo </a>
+</div>
+	
   <main>
 	
   <div class="container estiloHome">

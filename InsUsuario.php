@@ -50,6 +50,16 @@
 		</ul>
 	</nav>
 	</header>
+	
+<div id="Idbreadcrumbs1">
+   		<a href="index.html"> Home </a> 
+		<a href="sobre_nosotros.html"> Equipo </a>
+		<a href="contacto.html"> Contacto </a>
+		<a href="form_ingreso.html"> Login </a>
+		<a href="form_registro.html"> Registro </a>
+		<a href=""> InsUsuario </a>
+</div>
+
   <main>
 	
   <div class="container estiloHome">

@@ -1,7 +1,7 @@
 window.addEventListener('load', inicio);
 
 function inicio() {
-    console.log('Hola Peter');
+    //console.log('Hola Peter');
     document.getElementById('btn-form').addEventListener('click', llamarOtraPagina);
 }
 
