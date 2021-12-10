@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-	<!-- caracter en lenguaje humano -->
+
+
+<head>
+	
+		<!-- caracter en lenguaje humano -->
   <meta charset="UTF-8">
 	<!-- Vista distintas ventanas -->
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
 	<!-- Informacion de la pagina -->
   <meta name="Sistema web para gimnasio" content="Pagina de inicio"/>
 	<!-- Etiquetas para los bucadores -->
-  <meta name="keywords" content="Sistema web, gimnasio, entrenamiento"/>
-
-<head>
+  <meta name="keywords" content="Sistema web, gimnasio, inicio"/>
 
     
 	<!-- Script JS -->
@@ -29,16 +31,17 @@
 	<!-- Logo Icono -->
     <link href="img/LogoSF.png" rel="icon" type="image/png">
 	
-	<title>Inicio</title>
+	<title>Inicio - a5-g6-gimnasio</title>
 </head>
 
 <body id="estiloBody">
+	<main>
     
-	<header class="menu">
+	<header class="menu" id="idheader">
 		
-		<nav>
+		<nav id="idNav">
 			<ul>
-        <li class="CssImage"><img class="CssImage" src="img/LogoSF.png" width="70" height="70" alt="Imagen logo"/></li>
+        <li class="CssImage"><a href="index.html"><img class="CssImage" src="img/LogoSF.png" width="70" height="70" alt="Imagen logo"/></a></li>
   		<li><a href="index.html"> Home </a></li>
 		<li><a href="sobre_nosotros.html">Equipo</a></li>
 		<li><a href="contacto.html"> Contacto </a></li>
@@ -48,8 +51,11 @@
 		  </ul>
 	  </nav>
 	</header>
+<div id="breadcrumbs">
+   		<li><a href="index.html"> Home </a></li>
+</div>
   
-  <div class="container">
+  <div class="container" id="idCarrusel">
     <div class="row">
       
       <!--<div class="col">-->
@@ -66,7 +72,7 @@
           </ol>
       
           <!-- Wrapper for slides -->
-          <div class="carousel-inner">
+          <div class="carousel-inner" id="idBanner">
               <div class="item active">
                   <img src="img/ImgBanner1.jpg" alt="" >
               </div>
@@ -102,13 +108,12 @@
 
   <br>
   <section>
-    <div class="container ">
-      <div class="col CentroHome" >
-        <img class="" src="img/LogoSF.png" id="logo" width="100" height="100" alt="Imagen logo" onMouseOver="CambiarImagen()" />
+    <div class="container" id="idCentroPagina">
+      <div class="col CentroHome" > <a href="sobre_nosotros.html"><img class="" src="img/LogoSF.png" id="logo" width="100" height="100" alt="Imagen logo" onMouseOver="CambiarImagen()" /></a>
         <h1><strong>Entrenate como los MEJORES !!</strong></h1>
-        <img img-fluid src="img/ImgCentroHome.jpg" alt="" width="50%" height="50%">
+<img src="img/ImgCentroHome.jpg" alt="" width="50%" height="50%" id="IdIMagenCentro" img-fluid>
         
-        <h2><a href="form_registro.html"> Registrate y empeza el entrenamiento profesional</a></h2>
+        <h2><a href="form_registro.html" target="_blank" id="idLinkRegistro"> Registrate y empeza el entrenamiento profesional</a></h2>
         <br>
       </div>
     </div> 
@@ -120,16 +125,17 @@
       <div class="col">
         
       </div>
-      <div class="col">
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/lKx2qCeX-kw" title="YouTube video player" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-      </div>
+      <div class="col" id="idVideoYoutube">
+        <a href="https://www.youtube.com/embed/lKx2qCeX-kw" target="_blank">
+        <iframe width="420" height="315"  src="https://www.youtube.com/embed/lKx2qCeX-kw" title="YouTube video player" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      </a>      </div>
       <div class="col">
         
       </div>
     </div>
   </div>										
 
-  <section class="EstiloFuente">
+  <section class="EstiloFuente" id="idEstiloFuentes">
     <div class="container">
       <div class="row">
         <div class="col-4 CentroHome">
@@ -155,13 +161,13 @@
     <br>
   </section>
   
-  <section>
+  <section id="idSeccionCorreo">
   <div class="container">
     <div class="row justify-content-md-center">
         
       <div class="col-6 EstiloFormIngreso">
 	  
-        <form method="post" action="http://planidear.com.ar/a5-g6-gimnasio/EnvCorreo.php" name="formContacto">
+        <form id="idFormCorreo" method="post" action="http://planidear.com.ar/a5-g6-gimnasio/EnvCorreo.php" name="formContacto">
 
           
           <h2>
@@ -200,13 +206,20 @@
   </div>
 </section>
 
-  
+  <section>
+    <div class="container " id="AlinearLogoInicio">
+      <a href="sobre_nosotros.html"><img class="" src="img/LogoSF.png" id="logo" width="50" height="50" alt="Imagen logo" onMouseOver="CambiarImagen()" /></a>
+ 
+     
+    </div> 
+  </section>
+		
+  </main>
+
 <br>
-	<footer>
+	<footer id="idMenuInferior">
     <nav class="navbar navbar-light bg-light quitarMargenInferior">
       <div class="container-fluid">
-      
-        
           <img src="img/LogoSF.png" alt="" width="25" height="25" class="d-inline-block align-text-top" href="index.html">
         <a href="index.html">Home</a>
         <a href="sobre_nosotros.html">Equipo</a>

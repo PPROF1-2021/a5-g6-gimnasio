@@ -30,7 +30,7 @@
 	
 	<!-- Logo Icono -->
     <link href="img/LogoSF.png" rel="icon" type="image/png">
- <title>Registrado</title>
+ <title>Registrado - a5-g6-gimnasio</title>
 </head>
 
 <body id="estiloBody">
@@ -39,7 +39,7 @@
 	<header class="menu">
 				<nav>
 					<ul>
-        <li class="CssImage"><img class="CssImage" src="img/LogoSF.png" width="70" height="70" alt="Imagen logo"/></li>
+        <li class="CssImage"><a href="index.html"><img class="CssImage" src="img/LogoSF.png" width="70" height="70" alt="Imagen logo"/></a></li>
   		<li><a href="index.html"> Home </a></li>
 		<li><a href="sobre_nosotros.html">Equipo</a></li>
 		<li><a href="contacto.html"> Contacto </a></li>
@@ -50,6 +50,16 @@
 		</ul>
 	</nav>
 	</header>
+	
+<div id="Idbreadcrumbs1">
+   		<a href="index.html"> Home </a> 
+		<a href="sobre_nosotros.html"> Equipo </a>
+		<a href="contacto.html"> Contacto </a>
+		<a href="form_ingreso.html"> Login </a>
+		<a href="form_registro.html"> Registro </a>
+		<a href=""> InsUsuario </a>
+</div>
+
   <main>
 	
   <div class="container estiloHome">

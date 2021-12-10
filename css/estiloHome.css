@@ -88,12 +88,12 @@ table {
 }
 
 .menu {
-    list-style: none;
+    list-style: none;/*Propiedades elemento lista */
     padding: 0;
-    background: #000000;
-    width: 80%;
-    margin: auto;
-    align-content: initial;
+    background: #000000;/*establece el espacio de relleno */
+    width: 80%; /*ancho */
+    margin: auto; /*Margen */
+    align-content: initial; /*ajusta las líneas dentro de un contenedor flex cuando hay espacio extra en el eje transversal. Valores globales */
     /*font-family: Facon;
     font-size: 1.4em;*/
 }
@@ -160,10 +160,10 @@ table {
 }
 
 #estiloBody {
-    background: linear-gradient(to right, rgb(16 38 54 / 46%), rgb(209 170 124 / 40%)), url(../img/gim2.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+    background: linear-gradient(to right, rgb(16 38 54 / 46%), rgb(209 170 124 / 40%)), url(../img/gim2.jpg); /*fondos degradados en una dirección específica */
+    background-size: cover; /*La imagen es renderizada, preservando su proporción propia,*/
+    background-position: top; /* Posicion de la imagen: 0% en la posición vertical*/
+    background-attachment: fixed; /* determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor: a imagen de fondo estará fija en la pantalla y no se moverá con el bloque contenedor*/
 }
 
 @font-face {
@@ -225,4 +225,8 @@ div#terminos_condiciones label {
 .estilo_navbar{
     padding: 0mm;
     margin: 0mm;
+}
+
+#AlinearLogoInicio{
+text-align: center;
 }
