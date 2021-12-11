@@ -17,12 +17,11 @@ align-items: center;
 text-align: center;
 border-radius: 1% 1%;
 opacity: 95%;
-=======
+
 
 h1 {
     color: Red;
     text-align: center;
->>>>>>> 45533b744772fe902a3f3a4f2c6043c9aebd27b5
 }
 
 h3 {
@@ -79,8 +78,7 @@ table {
 }
 
 .menu1 {
-<<<<<<< HEAD
-	
+
 
 	width: 150px;
 	border: none;
@@ -90,14 +88,14 @@ table {
 }
 .aCss{
 	color: black;
-=======
+
     float: left;
     width: 150px;
     border: none;
     display: inline-block;
     vertical-align: top;
     z-index: 1;
->>>>>>> 45533b744772fe902a3f3a4f2c6043c9aebd27b5
+
 }
 
 .aCss {
