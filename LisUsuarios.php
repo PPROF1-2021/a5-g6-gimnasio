@@ -88,7 +88,7 @@
 		<?php
 
 include("Conexion/conexion.php");
-  
+//isset: Comprobar si una variable está definida 
 if(isset($_POST['txtUsuario'])){
 
 // Variables $_POST[]
