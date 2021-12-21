@@ -172,7 +172,66 @@ mysqli_close($mysqli);
 
 
       </div>
+<!--		
+<section>
+    <div class="container" id="idCentroPagina">
+      <div class="col CentroHome" > 
+<table>
+<tr>
+<td colspan="8" align="center" bgcolor="#999999"><span class="Estilo1">Contacto <a href="http://planidear.com.ar/idearg%202020/wordpress/FormContacto/FormContacto.php">Nuevo</a></span></td>
+</tr>
+<TR>
+<TD><B>ImagenEjemplo </B></TD>
+<TD><B>ideContacto </B></TD>
+<TD><B>Nombre </B></TD>
+<TD><B>Empresa </B></TD>
+<TD><B>Consulta </B></TD>
+<TD><B>Fecha </B></TD>
+<TD><B>Telefono </B></TD>
+<TD><B>Email </B></TD>
+</TR>
+
+</div>
+
+<p>
+  <?php
+/*
+  //contacto
+$con=mysqli_connect("localhost","c2110488_wordpre","tngiakub0Smcoot","c2110488_wordpre");
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+  $sql="SELECT * FROM contacto";
+  $res=mysqli_query($con,"SELECT * FROM `contacto` ORDER BY `contacto`.`ideContacto` DESC");
   
+ //$fila = mysqli_fetch_assoc($res);
+  $totalRows_Recordset2 = mysqli_num_rows($res);
+
+
+while($fila=mysqli_fetch_array($res))
+{
+echo "<TR>\n";
+echo "<td>".'<img src="'.$fila['ImagenEjemplo'].'" width="50" heigth="50"/>'."</td>\n";
+echo "<td>".$fila['ideContacto']."</td>\n";
+echo "<td>".$fila['NombreContacto']."</td>\n";
+echo "<td>".$fila['Empresa']."</td>\n";
+echo "<td>".$fila['Consulta']."</td>\n";
+echo "<td>".$fila['Fecha']."</td>\n";
+echo "<td>".$fila['Telefono']."</td>\n";
+echo "<td>".$fila['Email']."</td>\n";
+
+echo "</TR>\n";
+}
+mysqli_close($con);
+*/
+?>		  
+		  
+        <br>
+      </div>
+    </div> 
+  </section>
+  -->
   </main>
   
 <br>
