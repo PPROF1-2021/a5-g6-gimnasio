@@ -149,7 +149,7 @@ $query1 = $mysqli -> query ("SELECT * FROM `PrUsuario` WHERE `usuario` LIKE '$us
 {
 
 
-echo "<td>".'<img src="'.$fila['Imagen'].'" width="100" heigth="100"/>'."</td>"."<br>";
+echo "<td >".'<img  class="CssImage" src="'.$fila['Imagen'].'" width="100" heigth="100"/>'."</td>"."<br>";
 echo "<h2>"." Id: ".$fila['IdUsuario']."</h2>";
 echo "<h1>"." Usuario: ".$fila['usuario']."</h1>";
 echo "<h2>"." DNI: ".$fila['DNI']."</h2>";
@@ -181,37 +181,7 @@ mysqli_close($mysqli);
       <div class="Col"> 
 
 
-<table class="table table-dark table-striped">
-<tr>
-<td colspan="11" align="center" bgcolor="#9DD3AF">
 
-  <form name="form1" method="post" action="/a5-g6-gimnasio/LisUsuarios.php">
-    <label>Nombre: 
-      <input name="txtNombre1" type="text" id="txtNombre1">
-    </label>
-    <label>
-      <input type="submit" name="Submit" value="Buscar">
-  </label>
-    <a href="" target="_parent">Nuevo</a>
-  </form>
-
-  </td>
-</tr>
-<TR>
-<TD><B>Imagen</B></TD>
-<TD><B>IdUsuario</B></TD>
-<TD><B>DNI</B></TD>
-<TD><B>Nombre</B></TD>
-<TD><B>Apellido</B></TD>
-<TD><B>FechaNac</B></TD>
-<TD><B>Correo</B></TD>
-<TD><B>TipoUser</B></TD>
-<TD><B>Editar</B></TD>
-<TD><B>Borrar</B></TD>
-<TD><B>Copiar</B></TD>
-</TR>
-
-<p>
 	
 
 	
@@ -232,6 +202,33 @@ $var=$fila4['TipoUser'];
 }
 
  if($var == 1){
+	 
+echo "<table class=\"table\">
+<tr>
+<td colspan=\"11\" align=\"center\" bgcolor=\"#9DD3AF\">
+
+  <form name=\"form1\" method=\"post\" action=\"\">
+
+    <a href=\"\" target=\"_parent\">Nuevo</a>
+  </form>
+
+  </td>
+</tr>
+<TR class=\"table-dark\">
+<TD><B>Imagen </B></TD>
+<TD><B>IdUsuario </B></TD>
+<TD><B>DNI </B></TD>
+<TD><B>Nombre </B></TD>
+<TD><B>Apellido </B></TD>
+<TD><B>FechaNac </B></TD>
+<TD><B>Correo </B></TD>
+<TD><B>TipoUser </B></TD>
+<TD><B> Editar </B></TD>
+<TD><B> Borrar </B></TD>
+<TD><B> Copiar </B></TD>
+</TR>
+
+<p>";
 
 include("Conexion/conexion.php");
 $Nombre1=$_POST['txtNombre1'];	
@@ -241,8 +238,8 @@ $query = $conexion -> query ("SELECT * FROM `PrUsuario` WHERE `Nombre` LIKE '%$N
   while ($fila = mysqli_fetch_array($query))
 
 {
-echo "<TR>\n";
-echo "<td>".'<img src="'.$fila['Imagen'].'" width="50" heigth="50"/>'."</td>\n";
+echo "<TR class=\"table-dark\">\n";
+echo "<td>".'<img class="CssImage" src="'.$fila['Imagen'].'" width="50" heigth="50"/>'."</td>\n";
 echo "<td>".$fila['IdUsuario']."</td>\n";
 echo "<td>".$fila['DNI']."</td>\n";
 echo "<td>".$fila['Nombre']."</td>\n";
@@ -250,11 +247,11 @@ echo "<td>".$fila['Apellido']."</td>\n";
 echo "<td>".$fila['FechaNac']."</td>\n";
 echo "<td>".$fila['Correo']."</td>\n";
 echo "<td>".$fila['TipoUser']."</td>\n";
-echo "<td>"." <img src=\"http://planidear.com.ar/ImagenesWP/IconoEditar.jpg\" alt=\"BtnIconoEditar\" width=\"20\" height=\"20\" longdesc=\"Boton Editar\">"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\">Editar</a></td>\n";
+echo "<td>"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\"> Editar </a></td>\n";
 
-echo "<td>"." <img src=\"http://planidear.com.ar/ImagenesWP/IconoBorrar.jpg\" alt=\"BtnIconoBorrar\" width=\"20\" height=\"20\" longdesc=\"Boton Borrar\">"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\">Borrar</a></td>\n";
+echo "<td>"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\"> Borrar </a></td>\n";
 
-echo "<td>"." <img src=\"http://planidear.com.ar/ImagenesWP/IconoCopiar.jpg\" alt=\"BtnIconoCopiar\" width=\"20\" height=\"20\" longdesc=\"Boton Copiar\">"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\">Copiar</a></td>\n";
+echo "<td>"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\"> Copiar </a></td>\n";
 
 echo "</TR>\n";
 }
