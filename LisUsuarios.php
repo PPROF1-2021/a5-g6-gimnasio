@@ -155,6 +155,7 @@ echo "<h1>"." Usuario: ".$fila['usuario']."</h1>";
 echo "<h2>"." DNI: ".$fila['DNI']."</h2>";
 echo "<h2>"." Nombre: ".$fila['Nombre']."</h2>";
 echo "<h2>"." Apellido: ".$fila['Apellido']."</h2>";
+echo " TipoUser: ".$fila['TipoUser'];
 
 
 }
@@ -172,67 +173,103 @@ mysqli_close($mysqli);
 
 
       </div>
-<!--		
-<section>
-    <div class="container" id="idCentroPagina">
-      <div class="col CentroHome" > 
-<table>
+		
+		
+    <section>
+    <div class="container ">
+
+      <div class="Col"> 
+
+
+<table class="table table-dark table-striped">
 <tr>
-<td colspan="8" align="center" bgcolor="#999999"><span class="Estilo1">Contacto <a href="http://planidear.com.ar/idearg%202020/wordpress/FormContacto/FormContacto.php">Nuevo</a></span></td>
+<td colspan="11" align="center" bgcolor="#9DD3AF">
+
+  <form name="form1" method="post" action="/a5-g6-gimnasio/LisUsuarios.php">
+    <label>Nombre: 
+      <input name="txtNombre1" type="text" id="txtNombre1">
+    </label>
+    <label>
+      <input type="submit" name="Submit" value="Buscar">
+  </label>
+    <a href="" target="_parent">Nuevo</a>
+  </form>
+
+  </td>
 </tr>
 <TR>
-<TD><B>ImagenEjemplo </B></TD>
-<TD><B>ideContacto </B></TD>
-<TD><B>Nombre </B></TD>
-<TD><B>Empresa </B></TD>
-<TD><B>Consulta </B></TD>
-<TD><B>Fecha </B></TD>
-<TD><B>Telefono </B></TD>
-<TD><B>Email </B></TD>
+<TD><B>Imagen</B></TD>
+<TD><B>IdUsuario</B></TD>
+<TD><B>DNI</B></TD>
+<TD><B>Nombre</B></TD>
+<TD><B>Apellido</B></TD>
+<TD><B>FechaNac</B></TD>
+<TD><B>Correo</B></TD>
+<TD><B>TipoUser</B></TD>
+<TD><B>Editar</B></TD>
+<TD><B>Borrar</B></TD>
+<TD><B>Copiar</B></TD>
 </TR>
 
-</div>
-
 <p>
+	
+
+	
   <?php
-/*
-  //contacto
-$con=mysqli_connect("localhost","c2110488_wordpre","tngiakub0Smcoot","c2110488_wordpre");
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-  $sql="SELECT * FROM contacto";
-  $res=mysqli_query($con,"SELECT * FROM `contacto` ORDER BY `contacto`.`ideContacto` DESC");
-  
- //$fila = mysqli_fetch_assoc($res);
-  $totalRows_Recordset2 = mysqli_num_rows($res);
+
+include("Conexion/conexion.php");
+$Clave=$_POST['txtClave'];
+$usuario=$_POST['txtUsuario'];
+				
+$query1 = $mysqli -> query ("SELECT * FROM `PrUsuario` WHERE `usuario` LIKE '$usuario' AND `Clave` LIKE '$Clave' AND `TipoUser` = 1");
 
 
-while($fila=mysqli_fetch_array($res))
+  while ($fila4 = mysqli_fetch_array($query1))
+{
+echo " TipoUser: ".$fila4['TipoUser'];
+$var=$fila4['TipoUser'];
+
+}
+
+ if($var == 1){
+
+include("Conexion/conexion.php");
+$Nombre1=$_POST['txtNombre1'];	
+
+$query = $conexion -> query ("SELECT * FROM `PrUsuario` WHERE `Nombre` LIKE '%$Nombre1%'");
+	
+  while ($fila = mysqli_fetch_array($query))
+
 {
 echo "<TR>\n";
-echo "<td>".'<img src="'.$fila['ImagenEjemplo'].'" width="50" heigth="50"/>'."</td>\n";
-echo "<td>".$fila['ideContacto']."</td>\n";
-echo "<td>".$fila['NombreContacto']."</td>\n";
-echo "<td>".$fila['Empresa']."</td>\n";
-echo "<td>".$fila['Consulta']."</td>\n";
-echo "<td>".$fila['Fecha']."</td>\n";
-echo "<td>".$fila['Telefono']."</td>\n";
-echo "<td>".$fila['Email']."</td>\n";
+echo "<td>".'<img src="'.$fila['Imagen'].'" width="50" heigth="50"/>'."</td>\n";
+echo "<td>".$fila['IdUsuario']."</td>\n";
+echo "<td>".$fila['DNI']."</td>\n";
+echo "<td>".$fila['Nombre']."</td>\n";
+echo "<td>".$fila['Apellido']."</td>\n";
+echo "<td>".$fila['FechaNac']."</td>\n";
+echo "<td>".$fila['Correo']."</td>\n";
+echo "<td>".$fila['TipoUser']."</td>\n";
+echo "<td>"." <img src=\"http://planidear.com.ar/ImagenesWP/IconoEditar.jpg\" alt=\"BtnIconoEditar\" width=\"20\" height=\"20\" longdesc=\"Boton Editar\">"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\">Editar</a></td>\n";
+
+echo "<td>"." <img src=\"http://planidear.com.ar/ImagenesWP/IconoBorrar.jpg\" alt=\"BtnIconoBorrar\" width=\"20\" height=\"20\" longdesc=\"Boton Borrar\">"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\">Borrar</a></td>\n";
+
+echo "<td>"." <img src=\"http://planidear.com.ar/ImagenesWP/IconoCopiar.jpg\" alt=\"BtnIconoCopiar\" width=\"20\" height=\"20\" longdesc=\"Boton Copiar\">"."<a href=\"/a5-g6-gimnasio/form_ingreso.html?IdUsuario=".$fila['IdUsuario']."\">Copiar</a></td>\n";
 
 echo "</TR>\n";
 }
-mysqli_close($con);
-*/
-?>		  
+
+		}
+?>
+		  
 		  
         <br>
       </div>
     </div> 
   </section>
-  -->
+
   </main>
+		<!--
   
 <br>
 		<br>
@@ -241,14 +278,12 @@ mysqli_close($con);
 		<br>
 
 		
-	<footer .estiloFooter>
-    <nav class="navbar navbar-light bg-light">
+	<footer id="idMenuInferior">
+    <nav class="navbar navbar-light bg-light quitarMargenInferior">
       <div class="container-fluid">
-     
-        
           <img src="img/LogoSF.png" alt="" width="25" height="25" class="d-inline-block align-text-top" href="index.html">
-		<a href="index.html"> Home </a>
-         <a href="sobre_nosotros.html">Equipo</a>
+        <a href="index.html">Home</a>
+        <a href="sobre_nosotros.html">Equipo</a>
         <a href="contacto.html"> Contacto </a>
         <a href="form_ingreso.html"> Login </a>
         <a href="help.html"> Ayuda </a>
@@ -256,6 +291,8 @@ mysqli_close($con);
     </nav>
 
   </footer>
+
+-->
 </body>
 
 </html>
