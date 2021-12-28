@@ -8,13 +8,12 @@
 <file name="sobre_nosotros.html" server="ftp.planidear.com.ar" local="132836543721769203" remote="132836544600000000" Dst="0" />
 <file name="InsUsuario.php" server="ftp.planidear.com.ar" local="132836541691298345" remote="132836542200000000" Dst="0" />
 <file name="Consignas IEFI -Web 2021 nov 2021- FINAL.docx" server="ftp.planidear.com.ar" local="132810339400242622" remote="132810355800000000" Dst="0" />
-<file name="EnvCorreo.php" server="ftp.planidear.com.ar" local="132836539700841861" remote="132836540400000000" Dst="0" />
+<file name="EnvCorreo.php" server="ftp.planidear.com.ar" local="132851265569219518" remote="132851270400000000" Dst="0" />
 <file name="contacto.html" server="ftp.planidear.com.ar" local="132836540688522255" remote="132836541000000000" Dst="0" />
 <file name="GIM_DIAGRAMA_ENTIDAD_RELACION.png" server="ftp.planidear.com.ar" local="132810339400242622" remote="132810356400000000" Dst="0" />
 <file name="GIM_MODELO_RELACIONAL.png" server="ftp.planidear.com.ar" local="132810339400242622" remote="132810356400000000" Dst="0" />
 <file name="GIMDER.png" server="ftp.planidear.com.ar" local="132810339400242622" remote="132810356400000000" Dst="0" />
 <file name="formato-ieee-830 Requerimientos grupo 6 aula 5.docx" server="ftp.planidear.com.ar" local="132810339403523909" remote="132810356400000000" Dst="0" />
-<file name="LisUsuarios.php" server="ftp.planidear.com.ar" local="132847817926929968" remote="132847818600000000" Dst="0" />
 <file name="Logeado.php" server="ftp.planidear.com.ar" local="132813941528350208" remote="132813942000000000" Dst="0" />
 <file name="mapa del sitio.png" server="ftp.planidear.com.ar" local="132810339404773865" remote="132810356400000000" Dst="0" />
 <file name="scriptGim.sql" server="ftp.planidear.com.ar" local="132810339404773865" remote="132810356400000000" Dst="0" />
@@ -23,4 +22,5 @@
 <file name="alta_cliente.html" server="ftp.planidear.com.ar" local="132836544754126839" remote="132836545200000000" Dst="0" />
 <file name="form_registro.html" server="ftp.planidear.com.ar" local="132842583032563468" remote="132842583600000000" Dst="0" />
 <file name="sobre_nosotros-Final.html" server="ftp.planidear.com.ar" local="132835442683351673" remote="132835723800000000" Dst="0" />
+<file name="ListadoUsuarios.php" server="ftp.planidear.com.ar" local="132851267287904346" remote="132851268000000000" Dst="0" />
 </dwsync>
